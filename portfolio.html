@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/ced-logo transparent.png"
+      type="images"
+    />
+    <title>Gliban - Portfolio</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: whitesmoke;
+
+        /* PARALLAX EFFECTS */
+        scroll-behavior: smooth;
+      }
+
+      .main {
+        height: 100vh;
+        background-color: whitesmoke;
+      }
+
+      .logo-nav {
+        height: 80px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-left: 50px;
+      }
+
+      #mylogo {
+        height: 45px;
+        width: 45px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-right: 25px;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+
+      ul li {
+        display: inline;
+        justify-content: space-between;
+        margin: 50px;
+      }
+      li a {
+        text-decoration: none;
+
+        font-weight: bold;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      a {
+        color: darkred;
+        text-shadow: 1px 1px 0px orange;
+        padding: 10px;
+      }
+
+      a:hover {
+        color: gainsboro;
+        text-shadow: 1px 1px 0px black;
+
+        border-radius: 25px;
+        background-color: darkred;
+        box-shadow: 1px 1px 0px orange;
+      }
+
+      .main .pages {
+        height: 100vh;
+        background-color: whitesmoke;
+      }
+
+      #home {
+        background-color: gainsboro;
+        padding: 10px;
+      }
+
+      .home-container {
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 3px;
+        box-shadow: 0px 0px 3px gray;
+        background-color: whitesmoke;
+      }
+      .profile-intro {
+        height: 40%;
+        width: 90%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+      }
+      #mypic {
+        height: 290px;
+        width: 280px;
+        margin-right: 5px;
+        margin-bottom: 40px;
+        border: solid darkred;
+        border-radius: 150px;
+        filter: drop-shadow(0px 0px 8px orange);
+      }
+      .short-detail {
+        margin-top: 25px;
+      }
+      #highlights {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+
+        color: darkred;
+        text-shadow: 1px 1px 0px orange;
+      }
+      #non-highlights {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+      }
+
+      #quotes {
+        text-align: center;
+      }
+
+      #forward {
+        display: flex;
+        justify-content: flex-end;
+      }
+      #move {
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        color: darkred;
+        text-shadow: 1px 1px 0px orange;
+      }
+      #move:hover {
+        color: gainsboro;
+        text-shadow: 1px 1px 0px orange;
+        background-color: darkred;
+        border-radius: 25px;
+        box-shadow: 1px 1px 0px orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="logo-nav">
+        <div class="logo">
+          <img
+            src="./images/ced-logo transparent.png"
+            alt="forward"
+            id="mylogo"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li class="list-item"><a href="#home">Home</a></li>
+            <li class="list-item"><a href="#about">About</a></li>
+            <li class="list-item"><a href="#project">Project</a></li>
+            <li class="list-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="pages" id="home">
+        <div class="home-container">
+          <div class="profile-intro">
+            <div class="pic">
+              <img src="./images/cedie.jpg" alt="" id="mypic" />
+            </div>
+
+            <div class="short-detail">
+              <h1 id="non-highlights">
+                <span id="highlights">Hello,</span> I am Cedrick Paul Gliban .
+              </h1>
+              <h1 id="non-highlights">
+                I am BSIT Student and an
+                <span id="highlights">Aspiring Web Developer! .</span>
+              </h1>
+              <hr />
+              <h4>(Developer Motivational Quotes)</h4>
+              <p id="quotes">
+                <!-- “The computer was born to solve problems that did not exist
+                before.” - Bill Gates. -->
+                “Learn from people you admire; don't try to be them.” - Chris
+                Montwill
+              </p>
+              <hr />
+              <div id="forward">
+                <p><a href="#about" id="move">▶</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pages" id="about"></div>
+      <div class="pages" id="project"></div>
+      <div class="pages" id="contact"></div>
+    </div>
+  </body>
+</html>
